@@ -21,7 +21,7 @@ object Test extends IOApp {
 
     CORS.apply(
       http = x,
-      config = CORS.DefaultCORSConfig
+      config = CORS.DefaultCORSConfig.copy(anyOrigin = false)
     )
   }
 
